@@ -22,8 +22,9 @@ const Profile = () => {
                 </div>
 
                 <div className="profile-details-name">
-                    <span className="primary-text">
-                        Hey, I'm <span className="highlighted-text">Ketan</span>
+                    <span className="primary-text">Hey, I'm 
+                        <br/>
+                        <span className="highlighted-text">Ketan Shah</span>
                     </span>
                 </div>
 
@@ -53,7 +54,6 @@ const Profile = () => {
 
             <div className="profile-picture">
                 <div className="profile-picture-background">
-                    
                 </div>
             </div>
 
