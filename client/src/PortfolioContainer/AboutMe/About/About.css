@@ -1,0 +1,98 @@
+.about-me-card {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0px 20px -2px #1f2235;
+    border-radius: 20px;
+}
+
+.about-me-profile {
+    width: 50%;
+    background-image: url("../../../assets/AboutMe/me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+  }
+
+.about-me-details {
+    width: 50%;
+    text-align: justify;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-me-intro {
+    font-size: 18px;
+    padding: 0 0 30px 0;
+}
+
+.about-me-intro span{
+    color: var(--dark-orange);
+    font-family: "Poppins Bold";
+}
+
+.about-me-description{
+    font-size: 18px;
+    padding: 0 0 30px 0;
+}
+
+.about-me-description span{
+    color: var(--dark-orange);
+    font-family: "Poppins Bold";
+}
+
+.highlght-heading {
+    font-family: "Poppins Medium";
+    font-size: 16qpx;
+    margin: 0 0 5px 0;
+}
+.highlight {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 16px;
+}
+.highlight-blob {
+    height: 12px;
+    width: 12px;
+    margin: 0 10px 0 0;
+    background-color: var(--dark-orange);
+    border-radius: 50%;
+}
+
+/*About responsiveness*/
+@media only screen and (max-width: 1110px) {
+    .about-me-parent {
+        width: 88%;
+    }
+}
+@media only screen and (max-width: 898px) {
+    .about-me-profile {
+        display: none;
+    }
+    .about-me-details {
+        width: 100%;
+    }
+
+    .about-me-intro {
+        padding: 0 0 20px 0;
+    }
+    
+    .about-me-description{
+        padding: 0 0 20px 0;
+    }
+
+}
+@media only screen and (max-width: 466px) {
+    .about-me-options {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-options .highlighted-btn {
+        margin: 24px 0 0 0 !important;
+    }
+    .about-me-options button {
+        width: 100%;
+    }
+}
