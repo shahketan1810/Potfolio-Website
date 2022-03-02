@@ -19,12 +19,14 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
     return (
-        <div class="about-me-container screen-container" id={props.id || ""}>
-            <div className="about-me-parent">
-                <ScreenHeading title={'About Me'} subHeading={'Let Me Introduce Myself'} />
-                <About />
-                <Skills />
+        <div>
+            <div class="about-me-container screen-container" id={props.id || ""}>
+                <div className="about-me-parent">
+                    <ScreenHeading title={'About Me'} subHeading={'Let Me Introduce Myself'} />
+                    <About />
+                </div>
             </div>
+            <Skills />            
         </div>
     );
 }
