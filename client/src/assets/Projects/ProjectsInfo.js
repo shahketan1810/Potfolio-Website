@@ -1,0 +1,46 @@
+export const ProjectDetails = [
+    {
+        name: 'Musi.cy',
+        tech: ['React', 'NodeJS', 'Socket.io', 'Youtube API', 'Bootstrap'],
+        category: ['React', 'Web App'],
+        desc: 'Musi.cy is a cross-platform where you can create and join rooms and invite your friends to the room to chat and listen to Music together.',
+        github: 'https://github.com/shahketan1810/Musicy-Website',
+        live: 'https://musicy-app.herokuapp.com/',
+    },
+    {
+        name: 'YelpCamp',
+        tech: ['HTML', 'CSS', 'Bootstrap', 'NodeJS', 'MongoDB', 'MapboxGL', 'Passport.js'],
+        category: ['Web App'],
+        desc: 'YelpCamp is a web application where you can search for nearby campgrounds. You can also review these campgrounds and leave a comment and rating.',
+        github: 'https://github.com/shahketan1810/YelpCamp-Website',
+        live: 'https://pacific-ridge-40956.herokuapp.com/',
+    },
+    {
+        name: 'Virtual Assistant',
+        tech: ['Python', 'pyttsx3', 'sqlite3', 'WolphramAlpha API', 'pyQt5'],
+        category: ['Python'],
+        desc: 'The Virtual Assistant takes input from the user in audio and recognises the task and performs it on the device. It uses WolphramAlpha API to answer basic mathematical and general knowledge questions',
+        github: 'https://github.com/shahketan1810/Virtual-Assistant-using-Python',
+    },
+    {
+        name: 'MemeSanskar',
+        tech: ['Android', 'Java', 'Firebase'],
+        category: [],
+        desc: 'MemeSanskar is an Android App to create or edit memes. User can uplaod a meme template from their own gallery or from the Firebase Database with pre-existing meme templates.',
+        github: 'https://github.com/shahketan1810/Meme-Sanskar-Meme-Editing-App-',
+    },
+    {
+        name: 'PhoneBook',
+        tech: ['Python', 'tkinter', 'sqlite3'],
+        category: ['Python'],
+        desc: 'This is a contact management app using Python',
+        github: 'https://github.com/shahketan1810/Contact-Book-Python',
+    },
+    {
+        name: 'Notes Keeper',
+        tech: ['React'],
+        category: ['React'],
+        desc: 'A to-do list app using React. Create, update or delete the note.',
+        github: 'https://github.com/shahketan1810/NotesKeeperApp-React',
+    },
+];
