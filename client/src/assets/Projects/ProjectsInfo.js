@@ -1,4 +1,4 @@
-export const ProjectDetails = [
+const ProjectDetails = [
     {
         name: 'Musi.cy',
         tech: ['React', 'NodeJS', 'Socket.io', 'Youtube API', 'Bootstrap'],
@@ -30,7 +30,7 @@ export const ProjectDetails = [
         github: 'https://github.com/shahketan1810/Meme-Sanskar-Meme-Editing-App-',
     },
     {
-        name: 'PhoneBook',
+        name: 'Contant Book',
         tech: ['Python', 'tkinter', 'sqlite3'],
         category: ['Python'],
         desc: 'This is a contact management app using Python',
@@ -43,4 +43,20 @@ export const ProjectDetails = [
         desc: 'A to-do list app using React. Create, update or delete the note.',
         github: 'https://github.com/shahketan1810/NotesKeeperApp-React',
     },
+    {
+        name: 'Telephone Directory',
+        tech: ['C++','graphics.h'],
+        category: ['C++'],
+        desc: 'A Telephone Directory app made with C++. All information is stored in flat file system. The GUI is made using <graphics.h> library.',
+        github: 'https://github.com/shahketan1810/Cpp-project-Telephone-Directory-',
+    },
+    {
+        name: 'Video Searching App',
+        tech: ['React','Youtube API'],
+        category: ['React'],
+        desc: 'This web app is a mini version of Youtube. You can search for the videos using Youtube API and click on the desired search results to view the video.',
+        github: 'https://github.com/shahketan1810/yt-reacthooks-app',
+    },
 ];
+
+export default ProjectDetails;
