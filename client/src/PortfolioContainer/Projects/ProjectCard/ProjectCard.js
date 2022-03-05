@@ -19,7 +19,9 @@ export default function ProjectCard(props) {
 
   return (
     <div className="project-card" key={props.id}>
-      <div className="project-img"></div>
+      <div className="project-img">
+        <img src={props.image} alt={props.name} />
+      </div>
       <div className="project-detail">
         <h4>{props.name}</h4>
         <div className="project-tech">

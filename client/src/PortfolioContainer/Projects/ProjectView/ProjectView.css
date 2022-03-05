@@ -1,8 +1,9 @@
 .project-view{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     gap: 5vw;
     margin: auto;
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 }

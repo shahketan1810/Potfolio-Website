@@ -15,6 +15,7 @@ export default function ProjectView() {
         desc={obj.desc}
         github={obj.github}
         live={obj.live}
+        image={obj.image}
       />
     );
   });

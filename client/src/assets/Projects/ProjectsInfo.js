@@ -6,6 +6,7 @@ const ProjectDetails = [
         desc: 'Musi.cy is a cross-platform where you can create and join rooms and invite your friends to the room to chat and listen to Music together.',
         github: 'https://github.com/shahketan1810/Musicy-Website',
         live: 'https://musicy-app.herokuapp.com/',
+        image: '../../../assets/Projects/images/musicy.png',
     },
     {
         name: 'YelpCamp',
@@ -43,13 +44,14 @@ const ProjectDetails = [
         desc: 'A to-do list app using React. Create, update or delete the note.',
         github: 'https://github.com/shahketan1810/NotesKeeperApp-React',
     },
+    /*
     {
         name: 'Telephone Directory',
-        tech: ['C++','graphics.h'],
+        tech: ['C++','<graphics.h>'],
         category: ['C++'],
         desc: 'A Telephone Directory app made with C++. All information is stored in flat file system. The GUI is made using <graphics.h> library.',
         github: 'https://github.com/shahketan1810/Cpp-project-Telephone-Directory-',
-    },
+    },*/
     {
         name: 'Video Searching App',
         tech: ['React','Youtube API'],
