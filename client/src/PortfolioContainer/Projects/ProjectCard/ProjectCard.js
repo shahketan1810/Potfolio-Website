@@ -12,7 +12,7 @@ export default function ProjectCard(props) {
 
   const livelink = () => {
     if(props.live)
-      return <a href={props.live}><button>Live</button></a>;
+      return <a href={props.live}><i className='fa fa-globe'></i></a>;
     else
       return ;
   }
@@ -29,7 +29,9 @@ export default function ProjectCard(props) {
         </div>
         <p>{props.desc}</p>
         <div className="project-links">
-          <a href={props.github}><button>Github</button></a>
+          <a href={props.github}>
+            <i className='fa fa-github-square'></i>
+          </a>
           {livelink()}
         </div>
       </div>
