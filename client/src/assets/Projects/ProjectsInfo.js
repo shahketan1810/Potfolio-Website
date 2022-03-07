@@ -10,20 +10,12 @@ const ProjectDetails = [
     },
     {
         name: 'YelpCamp',
-        tech: ['HTML', 'CSS', 'Bootstrap', 'NodeJS', 'MongoDB', 'MapboxGL', 'Passport.js'],
+        tech: ['Bootstrap', 'NodeJS', 'MongoDB', 'MapboxGL','Cloudinary' ,'Passport.js'],
         category: ['Web App'],
         desc: 'YelpCamp is a web application where you can search for nearby campgrounds. You can also review these campgrounds and leave a comment and rating.',
         github: 'https://github.com/shahketan1810/YelpCamp-Website',
         live: 'https://pacific-ridge-40956.herokuapp.com/',
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/yelpcamp.png',
-    },
-    {
-        name: 'Virtual Assistant',
-        tech: ['Python', 'pyttsx3', 'sqlite3', 'WolphramAlpha API', 'pyQt5'],
-        category: ['Python'],
-        desc: 'The Virtual Assistant takes input from the user in audio and recognises the task and performs it on the device. It uses WolphramAlpha API to answer basic mathematical and general knowledge questions',
-        github: 'https://github.com/shahketan1810/Virtual-Assistant-using-Python',
-        image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/friday.png',
     },
     {
         name: 'MemeSanskar',
@@ -34,21 +26,13 @@ const ProjectDetails = [
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/memesanskar.png',
     },
     {
-        name: 'Contant Book',
-        tech: ['Python', 'tkinter', 'sqlite3'],
-        category: ['Python'],
-        desc: 'This is a contact management app using Python',
-        github: 'https://github.com/shahketan1810/Contact-Book-Python',
-        image: '',
-    },
-    {
         name: 'Notes Keeper',
         tech: ['React'],
         category: ['React'],
         desc: 'A to-do list app using React. Create, update or delete the note.',
         github: 'https://github.com/shahketan1810/NotesKeeperApp-React',
         live: 'https://codesandbox.io/s/react-keeper-app-n0q193',
-        image: '',
+        image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/keeper.PNG',
     },
     /*
     {
@@ -65,6 +49,22 @@ const ProjectDetails = [
         desc: 'This web app is a mini version of Youtube. You can search for the videos using Youtube API and click on the desired search results to view the video.',
         github: 'https://github.com/shahketan1810/yt-reacthooks-app',
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/miniyt.PNG',
+    },
+    {
+        name: 'Virtual Assistant',
+        tech: ['Python', 'sqlite3', 'WolphramAlpha API', 'pyQt5'],
+        category: ['Python'],
+        desc: 'The Virtual Assistant takes input from the user in audio and recognises the task and performs it on the device. It uses WolphramAlpha API to answer basic mathematical and general knowledge questions',
+        github: 'https://github.com/shahketan1810/Virtual-Assistant-using-Python',
+        image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/friday.png',
+    },
+    {
+        name: 'Contant Book',
+        tech: ['Python', 'tkinter', 'sqlite3'],
+        category: ['Python'],
+        desc: 'This is a contact management app using Python',
+        github: 'https://github.com/shahketan1810/Contact-Book-Python',
+        image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/phone.PNG',
     },
 ];
 
