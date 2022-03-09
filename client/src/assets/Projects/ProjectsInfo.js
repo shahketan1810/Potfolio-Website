@@ -12,7 +12,7 @@ const ProjectDetails = [
         name: 'YelpCamp',
         tech: ['Bootstrap', 'NodeJS', 'MongoDB', 'MapboxGL','Cloudinary' ,'Passport.js'],
         category: ['Web App'],
-        desc: 'YelpCamp is a web application where you can search for nearby campgrounds. You can also review these campgrounds and leave a comment and rating.',
+        desc: 'YelpCamp is a web application where you can search for nearby campgrounds and review and rate them.',
         github: 'https://github.com/shahketan1810/YelpCamp-Website',
         live: 'https://pacific-ridge-40956.herokuapp.com/',
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/yelpcamp.png',
@@ -29,7 +29,7 @@ const ProjectDetails = [
         name: 'Notes Keeper',
         tech: ['React'],
         category: ['React'],
-        desc: 'A to-do list app using React. Create, update or delete the note.',
+        desc: 'A Notes Keeping app made using React. A user is given features to create, update and delete the note.',
         github: 'https://github.com/shahketan1810/NotesKeeperApp-React',
         live: 'https://codesandbox.io/s/react-keeper-app-n0q193',
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/keeper.PNG',
@@ -46,18 +46,19 @@ const ProjectDetails = [
         name: 'Video Searching App',
         tech: ['React','Youtube API'],
         category: ['React'],
-        desc: 'This web app is a mini version of Youtube. You can search for the videos using Youtube API and click on the desired search results to view the video.',
+        desc: 'A mini version of Youtube. User can search for the videos using Youtube API and view the videos from the results.',
         github: 'https://github.com/shahketan1810/yt-reacthooks-app',
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/miniyt.PNG',
     },
     {
         name: 'Virtual Assistant',
-        tech: ['Python', 'sqlite3', 'WolphramAlpha API', 'pyQt5'],
+        tech: ['Python', 'sqlite3', 'WolphramAlpha API'],
         category: ['Python'],
-        desc: 'The Virtual Assistant takes input from the user in audio and recognises the task and performs it on the device. It uses WolphramAlpha API to answer basic mathematical and general knowledge questions',
+        desc: 'Virtual Assistant uses audio for input and output. It can perform tasks on a device and answer questions.',
         github: 'https://github.com/shahketan1810/Virtual-Assistant-using-Python',
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/friday.png',
     },
+    /*
     {
         name: 'Contant Book',
         tech: ['Python', 'tkinter', 'sqlite3'],
@@ -66,6 +67,7 @@ const ProjectDetails = [
         github: 'https://github.com/shahketan1810/Contact-Book-Python',
         image: 'https://raw.githubusercontent.com/shahketan1810/Potfolio-Website/main/client/src/assets/Projects/images/phone.PNG',
     },
+    */
 ];
 
 export default ProjectDetails;

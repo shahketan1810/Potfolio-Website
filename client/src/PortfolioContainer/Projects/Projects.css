@@ -1,15 +1,9 @@
 .projects-container{
-    background: #1d2671;  /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to bottom, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to bottom, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.projects-container .screen-heading{
-    color: #FFFFFF;
-}
-
-.projects-container .screen-sub-heading{
-    color: #FFFFFF;
+    /*background-color: rgb(42, 49, 56);*/
+    background: #6e89ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6e89ff, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6e89ff, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 80px;
 }
 
 .custom-shape-divider-top-1646244470 {
