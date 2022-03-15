@@ -1,9 +1,16 @@
 .projects-container{
     /*background-color: rgb(42, 49, 56);*/
-    background: #6e89ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #6e89ff, #fff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6e89ff, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin-bottom: 80px;
+    background: rgb(50,50,100);  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to bottom, rgb(50,50,100),  #6e89ff);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to bottom, rgb(50,50,100),#6e89ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-parent .screen-heading{
+    color: white;
+}
+
+.projects-parent .screen-sub-heading{
+    color: white;
 }
 
 .custom-shape-divider-top-1646244470 {
@@ -23,6 +30,27 @@
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1646244470 .shape-fill {
+.custom-shape-divider-top-1646244470 .shape-fill{
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1647360679 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1647360679 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1647360679 .shape-fill {
     fill: #FFFFFF;
 }

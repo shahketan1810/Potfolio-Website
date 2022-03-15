@@ -1,0 +1,147 @@
+.main-container {
+    min-height: 100vh;
+}
+
+.central-form {
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2235;
+}
+
+.central-form h2{
+    color: white;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+}
+
+.back-form{
+    max-width: 380px;
+    margin: 70px auto 50px auto;
+}
+
+.back-form .img-back{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.img-back h4{
+    color: white;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.back-form .img-back img{
+    width: 100%;
+    opacity: 0.7;
+}
+
+.central-form form{
+    width: auto;
+    display: flex;
+    color: #111;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -52px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.back-form form p{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--dark-orange);
+    letter-spacing: 0.4rem;
+    font-family: "Poppins Bold";
+}
+
+.back-form label{
+    margin-bottom: 5px;
+    color: #111;
+    letter-spacing: 0.2rem;
+}
+
+.back-form input,textarea{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.back-form textarea:focus{
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: white;
+}
+
+.back-form input:focus{
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: white;
+}
+
+.send-btn button{
+    margin-top: 15px;
+    padding: 5px;
+    outline: none;
+    width: 160px;
+    border: 2px solid var(--dark-orange);
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #1f2235;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-btn button:hover{
+    background-color: #1f2235;
+    transition: all ease 1s;
+    border: 2px solid #1f2235;
+}
+
+.img-back{
+    display: none;
+}
+
+.colz-icon i{
+    color: white;
+    padding: 8px;
+    font-size: 25px;
+}
+
+.colz-icon i:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (min-width: 940px) {
+    .back-form{
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .img-back{
+        display: block;
+        flex: 1;
+        align-self: center;
+        margin-right: 20px;
+    }
+
+    .back-form form{
+        flex: 0.9;
+    }
+}
