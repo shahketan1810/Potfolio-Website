@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Typical from 'react-typical';
+import axios from 'axios';
+import {toast} from 'react-toastify';
 
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
@@ -12,7 +14,7 @@ import './ContactMe.css';
 export default function (props) {
 
     let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id)
+        if(screen.fadeInScreen !== props.id)
             return;
         Animations.animations.fadeInScreen(props.id);
     }
@@ -37,8 +39,33 @@ export default function (props) {
         setMessage(e.target.value);
     }
 
+    const submitForm = async (e) => {
+        e.preventDefault();
+        try{
+            let data = {
+                name,
+                email,
+                message,
+            };
+            setBool(true);
+            const res = await axios.post(`/contact`, data);
+            if(name.length === 0 || email.length === 0 || message.length === 0){
+                setBanner(res.data.msg);
+                toast.error(res.data.msg);
+                setBool(false);
+            } else if(res.status === 200){
+                setBanner(res.data.msg);
+                toast.success(res.data.msg);
+                setBool(false);
+            }
+
+        }   catch (error){
+            console.log(error);
+        }
+    }
+
     return (
-        <div className="contact-me-container" id={props.id || ""}>
+        <div className="contact-me-container fade-in" id={props.id || ""}>
             <ScreenHeading 
                 title={"Contact Me"}
                 subHeading={"Let's Keep In Touch"}
@@ -73,7 +100,7 @@ export default function (props) {
                         <h4>Send Your Email Here!</h4>
                         <img src={imgBack} alt="Not found" />
                     </div>
-                    <form action="">
+                    <form onSubmit={submitForm}>
                         <p>{banner}</p>
                         <label htmlFor="name">Name</label>
                         <input type="text" onChange={handleName} value={name}/>
@@ -93,6 +120,11 @@ export default function (props) {
                     </form>
                 </div>
             </div>
+            <button
+                onClick={ () => ScrollService.scrollHandler.scrollToHome()}
+            >
+                ⬆
+            </button>
         </div>
     )
 }

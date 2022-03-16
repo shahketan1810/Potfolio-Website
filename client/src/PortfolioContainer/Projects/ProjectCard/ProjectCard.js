@@ -4,9 +4,9 @@ import "./ProjectCard.css";
 
 export default function ProjectCard(props) {
 
-  const technology = props.tech.map((val)=>{
+  const technology = props.tech.map((val, index)=>{
     return (
-      <span>{val}</span>
+      <span key={index}>{val}</span>
     );
   });
 

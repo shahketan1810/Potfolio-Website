@@ -1,4 +1,4 @@
-.main-container {
+.contact-me-container {
     min-height: 100vh;
 }
 
@@ -22,7 +22,7 @@
 
 .back-form{
     max-width: 380px;
-    margin: 70px auto 50px auto;
+    margin: 0 auto;
 }
 
 .back-form .img-back{
@@ -50,7 +50,6 @@
     padding: 15px;
     justify-content: center;
     flex-direction: column;
-    margin-top: -52px;
     background-color: #fff;
     border-radius: 15px;
 }
@@ -106,13 +105,15 @@
 }
 
 .send-btn button:hover{
-    background-color: #1f2235;
+    background-color: rgb(50, 50, 100);
     transition: all ease 1s;
-    border: 2px solid #1f2235;
+    border: 2px solid rgb(50, 50, 100);
 }
 
 .img-back{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .colz-icon i{
@@ -131,11 +132,10 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
-        margin-top: 30px;
+        margin-top: -52px;
     }
 
     .img-back{
-        display: block;
         flex: 1;
         align-self: center;
         margin-right: 20px;

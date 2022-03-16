@@ -9,7 +9,7 @@ export default function ProjectView() {
   const ProjectDetails = ProjectsInfo.map( (obj, index) => {
     return (
       <ProjectCard 
-        id={index}
+        key={index}
         name={obj.name}
         tech={obj.tech}
         desc={obj.desc}

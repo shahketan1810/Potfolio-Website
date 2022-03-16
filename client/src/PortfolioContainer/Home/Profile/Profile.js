@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollService from '../../../utilities/ScrollService';
 
 import "./Profile.css";
 
@@ -38,12 +39,14 @@ const Profile = () => {
                         </div>
                     </div>
                     <span className="profile-role-tagline">
-                        I design and develop simple yet beautiful websites :)
+                        I design and develop simple yet beautiful websites 😀
                     </span>
                 </div>
 
                 <div className="profile-options">
-                    <button className="btn primary-btn">
+                    <button className="btn primary-btn"
+                        onClick={ () => ScrollService.scrollHandler.scrollToHireMe()}
+                    >
                         Hire Me
                     </button>
                     <a href='Ketan-Shah.pdf' download='Resume-KetanShah.pdf'>

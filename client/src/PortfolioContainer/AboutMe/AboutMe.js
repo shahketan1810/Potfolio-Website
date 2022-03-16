@@ -11,7 +11,7 @@ import "./AboutMe.css"
 export default function AboutMe(props) {
 
     let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id)
+        if(screen.fadeInScreen !== props.id)
             return;
         Animations.animations.fadeInScreen(props.id);
     }
@@ -19,8 +19,8 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
     return (
-        <div>
-            <div className="about-me-container screen-container" id={props.id || ""}>
+        <div className="fade-in" id={props.id || ""}>
+            <div className="about-me-container screen-container">
                 <div className="about-me-parent">
                     <ScreenHeading title={'About Me'} subHeading={'Let Me Introduce Myself'} />
                     <About />
