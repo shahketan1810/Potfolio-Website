@@ -57,6 +57,9 @@ export default function (props) {
                 setBanner(res.data.msg);
                 toast.success(res.data.msg);
                 setBool(false);
+                setName("");
+                setMessage("");
+                setEmail("");
             }
 
         }   catch (error){
@@ -120,11 +123,6 @@ export default function (props) {
                     </form>
                 </div>
             </div>
-            <button
-                onClick={ () => ScrollService.scrollHandler.scrollToHome()}
-            >
-                ⬆
-            </button>
         </div>
     )
 }
