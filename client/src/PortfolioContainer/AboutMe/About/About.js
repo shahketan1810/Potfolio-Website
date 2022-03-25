@@ -1,4 +1,5 @@
 import React from 'react';
+import Tilt from 'react-tilt';
 
 import "./About.css";
 
@@ -29,22 +30,24 @@ export default function About() {
     }
 
     return (
-        <div className="about-me-card">
-            <div className="about-me-profile"></div>
-            <div className="about-me-details">
-                <p className="about-me-intro">
-                    Hi Everyone, I am <span>Ketan Shah</span> from Godhra, India. I am a student pursuing Bachelor of Technology in <span>Computer Science Engineering</span> from <span>JUET Guna</span>.    
-                </p>
-                <p className="about-me-description">
-                I am fluent in classics like <span>C++</span>, <span>Javascript</span> and <span>ReactJS</span>. My field of interests are building new Web Technologies and Products and also in Blockchain.
-                </p>
-                <div className="about-me-highlights">
-                    <div className="highlights-heading">
-                        <span>{SCREEN_CONSTANTS.highlights.heading}</span>
+        <Tilt className="Tilt" options={{max: 10, scale: 1.1, transition: true, speed: 10000, reverse: true}}>
+            <div className="about-me-card Tilt-inner">
+                <div className="about-me-profile"></div>
+                <div className="about-me-details">
+                    <p className="about-me-intro">
+                        Hi Everyone, I am <span>Ketan Shah</span> from Godhra, India. I am a student pursuing Bachelor of Technology in <span>Computer Science Engineering</span> from <span>JUET Guna</span>.    
+                    </p>
+                    <p className="about-me-description">
+                    I am fluent in classics like <span>C++</span>, <span>Javascript</span> and <span>ReactJS</span>. My field of interests are building new Web Technologies and Products and also in Blockchain.
+                    </p>
+                    <div className="about-me-highlights">
+                        <div className="highlights-heading">
+                            <span>{SCREEN_CONSTANTS.highlights.heading}</span>
+                        </div>
+                        {renderHighlight()}
                     </div>
-                    {renderHighlight()}
                 </div>
             </div>
-        </div>
+        </Tilt>
     )
 }

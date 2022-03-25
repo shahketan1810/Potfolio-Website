@@ -12,7 +12,7 @@ router.post('/contact', (req, res) => {
         port: 465,
         auth:{
             user: 'shahketan1810@gmail.com',
-            pass: process.env.PASSWORD,
+            pass: 'password',
         }
     })
 

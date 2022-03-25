@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { TOTAL_SCREENS } from '../utilities/commonUtils';
+import Footinfo from './FootInfo/Footinfo';
 
 export default function PortfolioContainer() {
   
@@ -16,6 +18,7 @@ export default function PortfolioContainer() {
     return (
     <div className="portfolio-container">
         {mapAllScreens}
+        <Footinfo />
     </div>
   )
 }

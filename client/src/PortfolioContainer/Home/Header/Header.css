@@ -78,12 +78,16 @@
     opacity: 0.5;
   }
 
+  .header-option{
+    font-size: 30px;
+  }
+
   .header-option-seperator {
     margin: 0;
   }
 
   .selected-header-option {
-    color: var(--white);
+    color: var(--dark-orange);
   }
 
   .header-hamburger-bars {
