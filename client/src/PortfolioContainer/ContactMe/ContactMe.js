@@ -11,7 +11,7 @@ import imgBack from '../../assets/ContactMe/mailz.jpeg';
 
 import './ContactMe.css';
 
-export default function (props) {
+export default function ContactMe(props) {
 
     let fadeInScreenHandler = (screen) => {
         if(screen.fadeInScreen !== props.id)
@@ -25,7 +25,6 @@ export default function (props) {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [banner, setBanner] = useState("");
-    const [bool, setBool] = useState(false);
 
     const handleName = (e) => {
         setName(e.target.value);
@@ -47,16 +46,13 @@ export default function (props) {
                 email,
                 message,
             };
-            setBool(true);
             const res = await axios.post(`/contact`, data);
             if(name.length === 0 || email.length === 0 || message.length === 0){
                 setBanner(res.data.msg);
                 toast.error(res.data.msg);
-                setBool(false);
             } else if(res.status === 200){
                 setBanner(res.data.msg);
                 toast.success(res.data.msg);
-                setBool(false);
                 setName("");
                 setMessage("");
                 setEmail("");
@@ -87,14 +83,11 @@ export default function (props) {
                         />
                     </h2>
                     <div className="colz-icon">
-                        <a href='#'>
+                        <a href='https://www.linkedin.com/in/ketan-shah-577915187/' target="_blank" rel="noreferrer">
                             <i className='fa fa-linkedin-square'></i>
                         </a>
-                        <a href='#'>
+                        <a href='https://github.com/shahketan1810' target="_blank" rel="noreferrer">
                             <i className='fa fa-github-square'></i>
-                        </a>
-                        <a href='#'>
-                            <i className='fa fa-envelope-square'></i>
                         </a>
                     </div>
                 </div>

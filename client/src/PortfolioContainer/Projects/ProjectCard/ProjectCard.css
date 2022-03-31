@@ -58,6 +58,12 @@
 .project-links a{
     color: white;
     font-size: 50px;
+    transition: 0.3s;
+}
+
+.project-links a:hover{
+    transform: scale(1.15);
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 940px){

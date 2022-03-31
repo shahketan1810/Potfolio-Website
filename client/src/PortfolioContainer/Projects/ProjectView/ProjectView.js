@@ -10,7 +10,7 @@ export default function ProjectView() {
 
   const ProjectDetails = ProjectsInfo.map( (obj, index) => {
     return (
-      <Tilt className="Tilt" options={{max: 10, transition: true, speed: 7000}}>
+      <Tilt className="Tilt" options={{max: 10, transition: true, speed: 5000, scale: 1.05}} key={index}>
         <ProjectCard 
           key={index}
           name={obj.name}

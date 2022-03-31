@@ -1,6 +1,10 @@
 const router = require('express').Router();
 const nodemailer = require('nodemailer');
 
+const config =  require('./secrets');
+const emailID = config.email;
+const emailPass = config.password;
+
 router.post('/contact', (req, res) => {
     let data = req.body;
     if(data.name.length === 0 || data.email.length === 0 || data.message.length === 0){
@@ -10,9 +14,9 @@ router.post('/contact', (req, res) => {
     let smtpTransporter = nodemailer.createTransport({
         service: 'Gmail',
         port: 465,
-        auth:{
-            user: 'shahketan1810@gmail.com',
-            pass: 'password',
+        auth: {
+            user: emailID,
+            pass: emailPass
         }
     })
 
